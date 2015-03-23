@@ -1,0 +1,24 @@
+{
+  "name": "go-format",
+  "main": "./lib/go-format",
+  "version": "1.0.7",
+  "private": true,
+  "description": "Automatically runs `go fmt` on Go source files when saved.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lsegal/atom-go-format"
+  },
+  "license": "MIT",
+  "readme": "# go-format package\n\nAutomatically runs `go fmt` on Go source files when saved.\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/lsegal/atom-go-format/issues"
+  },
+  "homepage": "https://github.com/lsegal/atom-go-format",
+  "_id": "go-format@1.0.7",
+  "dist": {
+    "shasum": "721c6c419d790928cb7828a517b4e0e8cd13b956"
+  },
+  "_resolved": "/private/var/folders/_k/dkdpgkr950s5xk31zdr6q0800000gn/T/d-114822-48362-2fkwwn/package.tgz",
+  "_from": "/private/var/folders/_k/dkdpgkr950s5xk31zdr6q0800000gn/T/d-114822-48362-2fkwwn/package.tgz"
+}

@@ -1,0 +1,94 @@
+{
+  "name": "autocomplete-haskell",
+  "main": "./lib/autocomplete-haskell",
+  "version": "0.2.1",
+  "description": "Autocomplete-plus provider for haskell",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lierdakil/autocomplete-haskell"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.177.0"
+  },
+  "dependencies": {
+    "underscore-plus": "*"
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "1.0.0": "autocompleteProvider_1_0_0"
+      }
+    }
+  },
+  "consumedServices": {
+    "haskell-ghc-mod": {
+      "versions": {
+        "0.1.0": "consumeGhcMod_0_1_0"
+      }
+    }
+  },
+  "readme": "# autocomplete-haskell atom package\n\nAutocomplete-haskell uses [Ghc-Mod][4] to find auto-completions for Haskell\nsource. It depends on [autocomplete-plus][1] and uses interface to ghc-mod\nprovided by [haskell-ghc-mod][2]. It also relies on scope names provided by\n[language-haskell][5]\n\nIf you also install [Hoogle][3], you can also show auto-completions for hole\n`_`. This will try to find replacements based on type. It's no magic though,\nso if hole has some crazy type, Hoogle won't find anything.\n\nCurrent autocompletion scopes:\n\n* Import module name\n* Language pragmas\n* OPTIONS_GHC pragma\n* Type name\n* Symbol name\n\nSadly, it does not pick up types and/or other symbols defined in current file\n(ghc-mod seems to be incapable of this feat), so for this you have to rely on\ndefault autocomplete-plus fuzzy completions.\n\n[1]: https://atom.io/packages/autocomplete-plus\n[2]: https://atom.io/packages/haskell-ghc-mod\n[3]: https://www.haskell.org/hoogle\n[4]: http://www.mew.org/~kazu/proj/ghc-mod/en/\n[5]: https://atom.io/packages/language-haskell\n\n![Screencast](https://raw.githubusercontent.com/lierdakil/autocomplete-haskell/master/screencast.gif)\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/lierdakil/autocomplete-haskell/issues"
+  },
+  "homepage": "https://github.com/lierdakil/autocomplete-haskell",
+  "_id": "autocomplete-haskell@0.2.1",
+  "_shasum": "ba32fc4230c39fcd0016d900bfca67fe45f7c380",
+  "_resolved": "file:../d-115216-20424-gm3kv6/package.tgz",
+  "_from": "../d-115216-20424-gm3kv6/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "underscore-plus",
+        "version": "1.6.6",
+        "path": "node_modules/underscore-plus/lib/underscore-plus.js"
+      },
+      {
+        "name": "underscore",
+        "version": "1.6.0",
+        "path": "node_modules/underscore-plus/node_modules/underscore/underscore.js"
+      }
+    ],
+    "extensions": {
+      ".coffee": [
+        "lib/autocomplete-haskell.coffee",
+        "lib/autocomplete-provider.coffee",
+        "lib/editor-controller.coffee",
+        "lib/suggestion-builder.coffee"
+      ],
+      ".js": [
+        "node_modules/underscore-plus/lib/underscore-plus.js",
+        "node_modules/underscore-plus/node_modules/underscore/underscore-min.js",
+        "node_modules/underscore-plus/node_modules/underscore/underscore.js"
+      ],
+      ".json": [
+        "node_modules/underscore-plus/node_modules/underscore/package.json",
+        "node_modules/underscore-plus/package.json",
+        "package.json"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          ""
+        ],
+        "dependencies": {
+          "underscore-plus": "*"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/underscore-plus/lib",
+          "node_modules/underscore-plus"
+        ],
+        "dependencies": {
+          "underscore": "~1.6.0"
+        }
+      }
+    ]
+  }
+}

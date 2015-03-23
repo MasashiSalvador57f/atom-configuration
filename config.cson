@@ -1,0 +1,32 @@
+"*":
+  editor:
+    invisibles: {}
+    fontSize: 14
+    showIndentGuide: true
+    showInvisibles: true
+  core:
+    themes: [
+      "atom-dark-ui"
+      "twilight-syntax"
+    ]
+    disabledPackages: [
+      "whitespace"
+    ]
+  "exception-reporting":
+    userId: "2e462dcf-d156-385b-d1d9-c1efff119283"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "6e52168cb02cf5240649c3a833e833d92731a96c"
+  "syntax-settings":
+    source:
+      go:
+        editorSettings:
+          softTabs: true
+      python:
+        editorSettings: {}
+        editorViewSettings:
+          showIndentGuide: true
+  react: {}
+  "highlight-line":
+    enableUnderline: true
